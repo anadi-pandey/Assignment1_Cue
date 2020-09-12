@@ -116,18 +116,30 @@ nav
 {
     width: 10%;
 }
-#supportIcon img
+.support-outer
 {
     
+background-color:rgba(red, green, blue, alpha);
+    width: 83px;
+height: 83.5px;
+padding: 1px; 
+position: fixed;
+/* left: 5px; */
+top: 69.3%;
+left: 89.68%;
+border: solid rgba(0, 0,0, .5) .5px;
+border-radius: 50%;
+}
+#supportIcon img
+{
+    /* outline: solid #FFD940; */
     border: solid white 5px;
     padding:8px;
     border-radius: 50%;
     background-color: red;
     position: fixed;
     top: 70%;
- outline: solid black;
- 
-    
+    left:90%; 
 }
 
 
@@ -144,7 +156,7 @@ nav
 .cards{
     width: 68.125%;
     display: flex;
-    border: solid black 1px;
+    /* border: solid black 1px; */
     margin: auto;
 }
 .card{
@@ -190,20 +202,20 @@ color: #FFD940;
 }
 
 .heading_container3{
-    border: solid black 1px;
+    /* border: solid black 1px; */
     display: flex;
     margin: auto;
     align-items: center;
 }
 .heading_container3 div p{
-    border: solid green 1px;
+    /* border: solid green 1px; */
     display: block;
     font-size: 30px;
     float: right;
 }
 .heading_container3 div{
     width: 50%;
-    border: solid green 1px;
+    /* border: solid green 1px; */
     display: block;
 }
 #para p{
@@ -221,7 +233,7 @@ padding-left: 70px;
 }
 .row{
     display: flex;
-    border: solid black 1px;
+    /* border: solid black 1px; */
     padding: 20px;
 }
 .row input{
@@ -260,15 +272,16 @@ padding-left: 70px;
 
 .container4-image
 {
+    color: white;
     margin: 0;
     height: 100vh;
     /* width: 2440px; */
     background-image: url("/images/plan_bg.png");
-    background-color:rgb(39, 94, 112);
+    background-color:rgb(16, 61, 77);
     background-position: center;
     background-repeat: no-repeat;
      background-size: cover; 
-    padding:10%;
+    /* padding:10%; */
     /* opacity:.32 ; */
     
     }
