@@ -16,6 +16,7 @@ a
 }
 nav
 {
+    z-index: 3;
     position: fixed;
     /* border: solid black 1px; */
     background-color:#028BC9;
@@ -140,8 +141,18 @@ border-radius: 50%;
     position: fixed;
     top: 70%;
     left:90%; 
+    z-index: 3;
 }
-
+.down-arrow
+{
+    /* border: solid black 1px; */
+    float: right ;
+    width: 65px;
+    height: 50px;
+    position: absolute;
+    top: 740px;
+    right: 50%;
+}
 
 .container-2{
     display: block;
@@ -227,6 +238,7 @@ color: #FFD940;
 }
 .form{
     padding: 40px;
+    overflow: hidden;
 }
 .form h2{
 padding-left: 70px;
@@ -235,6 +247,7 @@ padding-left: 70px;
     display: flex;
     /* border: solid black 1px; */
     padding: 20px;
+    /* overflow: hidden; */
 }
 .row input{
     font-size: 20px;
@@ -257,9 +270,98 @@ padding-left: 70px;
     border: none;
     text-align: center;
     width: 250px;
-    height: 35px;
+    height: 50px;
 }
 
+/* =================TOGGLE BUTTON INCLUDED=============== */
+.switch {
+    left: 152px;
+    /* border: solid black 2px; */
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .form span
+  {
+    /* border: solid black 1px; */
+  }
+  .toggleBTN
+  {
+      color: black;
+      position: relative;
+      left: 15px;
+      display: flex;
+    /* border: solid black 1px; */
+  }
+  #id1
+  {
+      margin-top: 4px;
+      position: relative;
+      left: 145px;
+  }
+
+
+  #id2
+  {
+      margin-top: 4px;
+    position: relative;
+    left: 160px;
+  }
+ 
 .row
 {
     padding-left: 110px;
@@ -269,6 +371,8 @@ padding-left: 70px;
     
     padding-left: 86px;
 }
+
+ /* =====================CHOOSE PLAN==================================== */
 
 .container4-image
 {
@@ -285,7 +389,280 @@ padding-left: 70px;
     /* opacity:.32 ; */
     
     }
+    .container4-text{
+        text-align: center;
+        width: 47.37%;
+        position: relative;
+        left: 25%;
+        padding-top: 60px;
+    }
+    .container4-text h1 {
+font-size: 44px;
+    }
     .Send-Message
     {
       padding-left: 160px;
+    
     }
+
+  .Cards4-Container{
+      position: relative;
+width: 47.36%;
+height: 60%;
+display:flex;
+/* border: solid white 1px; */
+/* background-color: tomato; */
+left: 25%;
+perspective: 600px;
+
+
+  }
+
+  .Card4{
+    
+      width: 43.95%;
+      position: relative;
+      text-align: center;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 25px 10px 25px 10px; 
+      color: black;
+      height: 80%; 
+      background-color: white;
+      overflow: hidden;
+  }
+
+  .Getting
+  {
+    border-radius: 5px;
+    background-color:#0098DA ;
+    color: white;
+    border: none;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .Card4 p {
+      position: relative;
+      top: 15%;
+    margin-left:auto ;
+    margin-right: auto;
+    width: 80%;
+    font-size: 16px;
+    color: darkgrey;
+    padding: 5px;
+   
+  }
+
+  .Card4 h4 {
+   margin:0;
+   margin-top: 15px;
+    font-size: 30px;
+    color:black;
+  }
+
+  /*  ----------------i-------Button-------------- */
+
+  #circle
+  {
+      background-color: gold;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      float: right;
+      position: relative;
+      top:50px;
+      left: 25px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+  }
+  #circle span{
+      position: relative;
+      top: 15px;
+  }
+  #circle2
+  {
+    background-color: gold;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: right;
+    position: relative;
+    top:10px;
+    left:25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px; 
+  }
+  #circle2 span{
+    position: relative;
+    top: 10px;
+  }
+  #Card1
+  {
+      margin-right: 20px;
+   transform: skewY(8deg);
+    
+  }
+
+  .Anti1
+  {
+      transform: skewY(-8deg);
+  }
+
+  #Card2
+  {
+      margin-left: 20px;
+      transform: skewY(-8deg);
+  }
+
+  .Anti2{
+    transform: skewY(8deg);
+  }
+
+  /* --------------------------Our Promises-------------------- */
+
+  .Promises
+  {
+      display: flex;
+      width: 70%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .Promises-part
+  {
+      padding: 20px 20px 20px 20px;
+      text-align: center;
+      width: 33.33333%;
+      margin-right: 10px;
+      margin-left: 10px;
+  }
+  .Promises-part img {
+height: 150px;
+  }
+  #Promises-head
+  {
+    
+      text-align: center;
+      margin: 20px;
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 44px;
+  }
+
+  /* -------------------------------Clients Section---------------------------- */
+
+  .Clients-head h1
+  {
+      z-index: 0;
+      background-color:#0098DA;
+      margin: 0;
+      text-align: center;
+      color: white;
+      position: relative;
+      top: 100px;
+  }
+  .Client-Container
+  {
+    background-color: #0098DA;
+    height: 670px;
+    width: 100vw;
+    /* border: solid black 1px; */
+    display: flex;
+  }
+  .Clients
+  {
+    width: 80%;
+position: relative;
+top: 200px;
+height: 70%;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      /* border: solid black 1px; */
+
+  }
+  .Clients-part
+  {
+      text-align: center;
+      /* border: solid black 1px; */
+      width:500px ;
+      height: 300px;
+      border-radius: 5px;
+      background-color: white;
+      margin: 10px;
+      color: #0098DA;
+      padding: 20px;
+  }
+  .arrow
+  {
+      width:10%;
+      position: relative;
+      top:50%;
+      left:64px;
+
+  }
+  .Clients-part span
+  {
+      margin: 5px;
+      padding: 10px;
+      margin-bottom: 30px;
+      /* margin: 5px; */
+      /* padding:10px; */
+  }
+
+  /* -----------------------FOOTER------------------- */
+
+  footer{
+      height: 306px;
+      width: 100vw;
+      background-color: #006C9D;
+      display: flex;
+      z-index: 4;
+  }
+  .foot-1
+  {
+      width: 50%;
+      display: flex;
+    justify-content: space-between;
+  }
+  #location
+  {
+      margin-left: 100px;
+      margin-right: 50px;
+      width:16%;
+      margin-top: 30px;
+  }
+  #location p {
+      height: 50px;
+  }
+  #Email
+  {
+    margin-top: 30px;
+      width: 16%;
+      margin-right: 100px;
+  }
+  #Phone
+  {
+    margin-top: 30px;
+      margin-left: 50px;
+      width: 16%;
+  }
+  .foot-2
+  {
+      /* border: solid black 1px; */
+      width: 50%;
+      text-align: end;
+  }
+
+  .foot-2 img {
+margin: 20px;
+/* width: 20px; */
+/* height: 40px; */
+  }
