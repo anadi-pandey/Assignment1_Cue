@@ -1,7 +1,7 @@
 body{
 margin: 0;
 /* To make it consume full width/to cut the edges  */
-
+/* overflow: hidden; */
 font-family: Roboto, sans-serif;
 /* background-color: #006C9D; */
 }
@@ -20,7 +20,7 @@ nav
     position: fixed;
     /* border: solid black 1px; */
     background-color:#028BC9;
-    width: 100%;
+    width: 100vw;
 }
 #navcon
 {
@@ -29,13 +29,20 @@ nav
     height: 50px;
     color: white;
     font-size: 22px;
-    padding: 7px 60px 7px 60px;
+    /* padding: 7px 60px 7px 60px; */
 }
 .nav-item
 {
+   
+    position: relative;
+    left: 50px;
     /* border: solid green 1px; */
     font-size: 18px;
     height: 50px;
+}
+.nav-item img
+{
+height: 40px;
 }
 #logo
 {
@@ -69,7 +76,8 @@ nav
 }
 .container
 {
-    padding: 60px;
+    width: 100vw;
+    /* padding: 60px; */
     display: flex;
     background-color: #0098DA;
 }
@@ -141,7 +149,7 @@ border-radius: 50%;
     position: fixed;
     top: 70%;
     left:90%; 
-    z-index: 3;
+    
 }
 .down-arrow
 {
@@ -155,36 +163,85 @@ border-radius: 50%;
 }
 
 .container-2{
-    display: block;
+    /* display: block; */
     /* padding: 93px; */
     padding-top: 93px;
+    /* padding-left: 50px;
+    padding-right: 50px; */
     background-color: #006C9D;
     height: 100vh;
+    border: solid black 1px;
+    /* overflow: hidden; */
+    width: 100vw;
+}
+
+.container-2 h1{
+    position: relative;
+    top: 50px;
+    font-size: 44px;
+}
+
+
+.container-2 h2{
+    position: relative;
+    top: 55px;
+    font-size: 30px;
 }
 .headings-container2{
     text-align: center;
 }
 .cards{
-    width: 68.125%;
+    position: relative;
+    top: 8%;
+    width: 68%;
     display: flex;
+     
+    height: 57.86%;
     /* border: solid black 1px; */
     margin: auto;
 }
 .card{
     position: relative;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 10px;
-    padding: 25px 10px 25px 10px; 
-    width: 25%; 
-    height: 57.86%; 
+    /* padding: 25px 10px 25px 10px;  */
+    height: 100%;
+    width: 25%;
     background-color: white;
 }
+
 .card p{
     margin-left:auto ;
     margin-right: auto;
-    width: 80%;
+    width: 90%;
+    height: 40%;
+    color: #0098DA;
+    position: relative;
+    top: 10%;
+    font-size: 22px;
 }
+.card h4{
+    position: relative;
+    top: 10%;
+    font-size: 22px;
+    font-weight: bold;
+}
+.card img{
+    position: relative;
+    top: 55px;
+
+    height: 30%;
+    width: 50%;
+}
+.card h3{
+    /* border: solid black 1px; */
+    color:#006C9D; 
+    font-weight: 700;
+    position: relative;
+    top:-10%;
+}
+
 .headings-container2 h2
 {
 color: #FFD940;
@@ -206,13 +263,16 @@ color: #FFD940;
     transform: rotate(-20deg);
 }
 .container-3{
+    width: 100vw;
     background-color:white ;
     display: block;
-    padding: 40px;
+    
+    border: solid black 1px;
 
 }
 
 .heading_container3{
+   padding-top: 50px;
     /* border: solid black 1px; */
     display: flex;
     margin: auto;
@@ -230,11 +290,15 @@ color: #FFD940;
     display: block;
 }
 #para p{
-    float: left;
+    font-weight: 700;
+    font-size: 44px;
+    position: relative;
+    right: 70%;
     padding-left: 40px;
 }
 #broadband img{
-    float: right;
+    position: relative;
+    left: 75%;
 }
 .form{
     padding: 40px;
@@ -247,6 +311,9 @@ padding-left: 70px;
     display: flex;
     /* border: solid black 1px; */
     padding: 20px;
+    margin: 8px;
+    margin-right: 16px;
+    width: 60%;
     /* overflow: hidden; */
 }
 .row input{
@@ -271,6 +338,11 @@ padding-left: 70px;
     text-align: center;
     width: 250px;
     height: 50px;
+}
+
+#Send-a-message
+{
+    font-size: 22px;
 }
 
 /* =================TOGGLE BUTTON INCLUDED=============== */
@@ -379,6 +451,7 @@ padding-left: 70px;
     color: white;
     margin: 0;
     height: 100vh;
+    width: 100vw;
     /* width: 2440px; */
     background-image: url("/images/plan_bg.png");
     background-color:rgb(16, 61, 77);
@@ -552,8 +625,9 @@ height: 150px;
       text-align: center;
       margin: 20px;
       margin-top: 50px;
-      padding: 20px;
+     
       font-size: 44px;
+      width: 100vw;
   }
 
   /* -------------------------------Clients Section---------------------------- */
